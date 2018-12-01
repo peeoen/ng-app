@@ -1,0 +1,16 @@
+<button (click)="getCity()">Get City</button>
+
+<table>
+    <tr>
+        <th>city_code</th>
+        <th>city_name</th>
+        <th>creation_date</th>
+        <th>last_update</th>
+    </tr>
+    <tr *ngFor="let c of city">
+            <td>{{c.city_code}}</td>
+        <td>{{c.city_name}}</td>
+        <td>{{c.creation_date}}</td>
+        <td>{{c.last_update}}</td>
+    </tr>
+</table>
